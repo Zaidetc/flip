@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+   <title>HTML</title>
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <script src="https://kit.fontawesome.com/acbec5545e.js" crossorigin="anonymous"></script>
+   <link rel="stylesheet" href="style.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,700&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+
+   <div id="container">
+      <div id="mySidenav" class="sidenav">
+         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i id="times" class="fas fa-times"></i></a>
+         <div id="navheader">
+
+            <a id="home" href=""><i class="fas fa-home"></i> &nbsp; Home</a>
+         </div>
+
+         <a href="#"><img id="pluszone" src="/images /pluszone.png" a>Flipkart Plus Zone</a>
+         <hr>
+         <a href="#"><img id="category" src=" /images /category.png">All Categories </a>
+         <a href="#"><img id="more" src="/images /more.png">More on Flipkart</a>
+         <hr>
+         <a href="#"><img id="lang" src="/images /lang.JPG">Choose Language</a>
+         <hr>
+         <a href="#"><img id="offer" src=" /images /offer.JPG">Offer Zone</a>
+         <a href="#"><img id="sell" src="/images /sell.JPG">Sell on Flipkart</a>
+         <hr>
+         <a href="#"><img id="order" src="/images /orders.JPG">My Orders</a>
+         <a href="#"><img id="reward" src=" /images /rewads.JPG">My Rewards</a>
+         <a href="#"><i class="fas fa-shopping-cart"></i> &nbsp;My Cart</a>
+         <a href="#"><i class="fas fa-heart"></i> &nbsp; My Wishlist</a>
+         <a href="#"><i class="fas fa-user"></i> &nbsp; My Account</a>
+         <a href="#"><i class="fas fa-bell"></i> &nbsp; My Notifications</a>
+         <a href="#"><i class="fas fa-comment-alt"></i> &nbsp; My Chats</a>
+         <hr>
+         <a href="#">Notification Preferences</a>
+         <a href="#">Help Center</a>
+         <a href="#">Privacy Policy</a>
+         <a href="#">Legal</a>
+         <a href="#">#</a>
+         <a href="#">#</a>
+
+
+      </div>
+
+
+      <span style="font-size:30px;cursor:
+pointer" onclick="openNav()"><i id="bars" class="fas fa-bars"></i>
+      </span>
+      
+         
+      
+      
+      <script>
+         /* Set the width of the side navigation to
+250px */
+
+         function openNav() {
+            document.getElementById("mySidenav")
+               .style.width = "250px";
+         }
+
+         function closeNav() {
+            document.getElementById("mySidenav")
+               .style.width = "0";
+         }
+         
+         
+
+ var counter = 1;
+   setInterval(function(){
+      document.getElementById("radio" + counter).checked = true; 
+      counter++;
+      if(counter > 8){
+         counter = 1;
+      }
+   },3000);
+   
+
+      </script>
+      <div id="header">
+
+         <h4 id="H4">Flipkart</h4>
+         <h6 id="H6">Explore</h6>
+         <h5 id="H5">Plus </h5>
+         <img id="plus" src="plus.png" alt="plus.png">
+         <i id="bell" class="fas fa-bell"></i>
+         <i id="kart" class="fas fa-shopping-cart"></i>
+         <div id="searchbar">
+            <input style="font-family:'Font awesome 5 free'; font-weight:700; " type="text" id="bar" placeholder="&nbsp; &#xf002  &nbsp; Search for Products, Brands and More">
+            <i id="mic" class="fas fa-microphone"></i>
+         </div>
+      </div>
+   </div>
+   <div id="allcategory">
+      <a class="scrollbar" href=""><img class="scrollimg" src="/images /allcat.JPG">All Categories </a>
+      <a class="scrollbar" href="">
+       <img class="scrollimg" src=" /images /essential.JPG"> Essentials</a>
+      <a class="scrollbar" href="">      <img class="scrollimg" src="/images /zone.JPG"> Offer Zone</a>
+      <a class="scrollbar" href=""> <img class="scrollimg" src="/images /grocery.JPG">  Grocery</a>
+      <a class="scrollbar" href=""> <img class="scrollimg" src="/images /mobile.JPG"> 
+         Mobiles</a>
+      <a class="scrollbar" href=""> <img class="scrollimg" src="/images /fasion.JPG"> 
+         Fashion</a>
+      <a class="scrollbar" href=""> <img class="scrollimg" src="/images /electronics.JPG"> 
+         Electronics</a>
+      <a class="scrollbar" href=""> <img class="scrollimg" src="/images /home.JPG"> 
+         Home</a>
+      <a class="scrollbar" href=""> <img class="scrollimg" src="/images /beauty.JPG"> 
+         Beauty</a>
+      <a class="scrollbar" href=""> <img class="scrollimg" src="/images /applincess.JPG"> 
+         Appliances</a>
+      <a class="scrollbar" href=""> <img class="scrollimg" src="/images /toys.JPG"> 
+         Toys & Baby</a>
+      <a class="scrollbar" href=""> <img class="scrollimg" src="/images /travel.JPG"> 
+         Travel</a>
+      <a class="scrollbar" href=""> <img class="scrollimg" src="/images /insurance.JPG"> 
+         Insurance</a>
+      <a class="scrollbar" href=""> <img class="scrollimg" src="/images /sports.JPG"> 
+         Sports</a>
+      <a class="scrollbar" href=""> <img class="scrollimg" src="/images /food.JPG"> 
+         Food & More</a>
+      <a class="scrollbar" href=""> <img class="scrollimg" src="/images /refurbished.JPG"> 
+         Refurbished</a>
+      <a class="scrollbar" href=""> <img class="scrollimg" src="/images /gift.JPG"> 
+         Gift Cards</a>
+      <a class="scrollbar" href=""> <img class="scrollimg" src="/images /cars.JPG"> 
+         Cars</a>
+   </div>
+      <div class="slider">
+      <div class="slides">
+
+         <input type="radio" name="radio-btn" id="radio1">
+         <input type="radio" name="radio-btn" id="radio2">
+         <input type="radio" name="radio-btn" id="radio3">
+         <input type="radio" name="radio-btn" id="radio4">
+         <input type="radio" name="radio-btn" id="radio5">
+         <input type="radio" name="radio-btn" id="radio6">
+         <input type="radio" name="radio-btn" id="radio7">
+         <input type="radio" name="radio-btn" id="radio8">
+
+         <div class="slide first">
+            <img class="slimg"  src="/sliderimg/1.jpg" alt="">
+         </div>
+         <div class="slide">
+            <img class="slimg"  src="/sliderimg/2.jpeg" alt="">
+         </div>
+         <div class="slide ">
+            <img class="slimg"  src="/sliderimg/3.jpeg" alt="">
+         </div>
+         <div class="slide">
+            <img class="slimg"  src="/sliderimg/4.jpeg" alt="">
+         </div>
+          
+      <div class="slide">
+         <img class="slimg"  src="/sliderimg/5.jpg" alt="">
+      </div>
+      <div class="slide">
+         <img class="slimg"  src="/sliderimg/6.jpg" alt="">
+      </div>
+      <div class="slide">
+         <img class="slimg"  src="/sliderimg/7.jpg" alt="">
+      </div>
+      <div class="slide">
+         <img class="slimg"  src="/sliderimg/8.jpg" alt="">
+      </div>
+      
+
+         <div class="navigation-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+            <div class="auto-btn4"></div>
+            <div class="auto-btn5"></div>
+            <div class="auto-btn6"></div>
+            <div class="auto-btn7"></div>
+            <div class="auto-btn8"></div>
+
+         </div>
+      </div>
+      <div class="navigation-manual">
+         <label for="radio1" class="manual-btn"></label>
+         <label for="radio2" class="manual-btn"></label>
+         <label for="radio3" class="manual-btn"></label>
+         <label for="radio4" class="manual-btn"></label>
+         <label for="radio5" class="manual-btn"></label>
+         <label for="radio6" class="manual-btn"></label>
+         <label for="radio7" class="manual-btn"></label>
+         <label for="radio8" class="manual-btn"></label>
+
+      </div>
+
+
+   </div>
+   <script src="main.js"></script>
+
+   <!--here start footer-->
+
+<div id="footer">
+   
+   <footer>
+      
+  <a class="foot" href=""><i id="footicon" class="fas fa-store"></i>Shop</a> 
+  <a class="foot" href=""><img class="footimg" src=" /images /super.JPG">SuperCoin</a> 
+  <a class="foot" href=""><img id="MOREimg" src=" /images /MORE.JPG"></a> 
+  <a class="foot" href=""><i id="footicon" class="fas fa-rupee-sign"></i>Credit</a> 
+  <a class="foot" href=""><i id="footicon" class="fas fa-gamepad"></i>Game Zone</a> 
+   </footer>
+
+   </div>
+
+
+
+</body>
+
+</html>
