@@ -1,17 +1,20 @@
-body {
-   font-size: 15pt;
-}
-
 #container {
    display: flex;
    background-color: #0372FD;
-   height: 20vh;
+   height: 17vh;
    top: 0;
    position: fixed;
    left: 0;
    right: 0;
-   z-index: 1;
+   z-index: 2;
+
 }
+
+::-webkit-scrollbar {
+   display: none;
+
+}
+
 
 #H4 {
    color: white;
@@ -53,7 +56,6 @@ body {
    height: 33px;
    width: 75vw;
    margin-top: 20px;
-
 
    background-color: white;
    border-color: white;
@@ -116,7 +118,7 @@ body {
    left: 0;
    background-color: #111;
    overflow-x: hidden;
-   
+
    padding-top: 60px;
 }
 
@@ -126,7 +128,7 @@ body {
    font-size: 15px;
    color: #818181;
    display: block;
-   
+
 }
 
 
@@ -168,11 +170,11 @@ body {
 }
 
 #bars {
-margin-top: 15px;
+   margin-top: 15px;
    color: white;
    font-size: 23px;
    margin-left: 10px;
-   
+
 }
 
 #times {
@@ -195,7 +197,13 @@ hr {
 
 }
 
-#category ,#more,#lang,#sell,#reward,#order,#offer{
+#category,
+#more,
+#lang,
+#sell,
+#reward,
+#order,
+#offer {
 
    height: 25px;
    width: 25px;
@@ -203,212 +211,239 @@ hr {
    margin-top: -5px;
 }
 
-#allcategory{
+#allcategory {
    display: flex;
-   overflow-x: auto; 
-  position: fixed;
-  top: 100px; 
+   overflow-x: auto;
+   overflow-y: hidden;
+   position: fixed;
+   top: 102px;
+   height: 55px;
+   margin: 3px -7px;
 
-margin: 9px -7px; 
 
-width: 100vw;
+   width: 100vw;
 }
 
-.scrollbar{
-   
+
+.scrollbar {
+
    z-index: 2;
-   text-decoration: none; 
+   text-decoration: none;
    margin: 30px 5px;
-   padding: 10px; 
-   font-size: 6px; 
+   padding: 10px;
+   font-size: 6px;
    color: black;
    white-space: nowrap;
 }
-.scrollimg{
+
+.scrollimg {
    display: flex;
    height: 35px;
-   width: 37px; 
-   
-   margin-top: -33px; 
+   width: 37px;
+
+   margin-top: -33px;
 }
 
 
 
-.slimg{
-   height: 180px; 
-   width: 357px; 
+.slimg {
+   height: 180px;
+   width: 357px;
 
-   
+
 }
-.slider{
+
+.slider {
    position: absolute;
-   display: flex;
-   top: 30%;
-    left: 0;
-    right: 0;
-   height: 195px; 
-   width: 357px; 
+   
+   top: 29%;
+   left: 0;
+   right: 0;
+   height: 195px;
+   width: 357px;
    overflow: hidden;
 
 }
 
-.slides{
+.slides {
 
-   
-   height: 200px; 
+
+   height: 200px;
    width: 100vw;
    display: flex;
-   
+
 }
 
-.slides input{
+.slides input {
    display: none;
 }
 
 
-.navigation-manual{
+.navigation-manual {
    position: absolute;
-   display: flex; 
-   
-   width: 250px; 
+   display: flex;
+
+   width: 250px;
    justify-content: center;
-   
+
    right: 18.6%;
-   bottom:2px;
+   bottom: 2px;
 }
 
-.manual-btn{
- display: flex;
-border: 2px solid #42445A;
-      border-radius: 10px; 
-  
-  padding: 4px;
+.manual-btn {
+   display: flex;
+   border: 2px solid #42445A;
+   border-radius: 10px;
+
+   padding: 4px;
 }
 
-.manual-btn:not(:last-child){
-   margin-right: 5px; 
-   
+.manual-btn:not(:last-child) {
+   margin-right: 5px;
+
 }
 
-#radio1:checked ~ 
-.first{
+#radio1:checked~.first {
    margin-left: 0;
 }
-#radio2:checked ~
-.first{
+
+#radio2:checked~.first {
    margin-left: -99%;
 }
-#radio3:checked ~ 
-.first{
+
+#radio3:checked~.first {
    margin-left: -198%;
 }
-#radio4:checked ~ 
-.first{
-   margin-left:-297.5%;
+
+#radio4:checked~.first {
+   margin-left: -297.5%;
 }
-#radio5:checked ~ 
-.first{
+
+#radio5:checked~.first {
    margin-left: -397%;
-}#radio6:checked ~ 
-.first{
+}
+
+#radio6:checked~.first {
    margin-left: -495%;
-}#radio7:checked ~ 
-.first{
+}
+
+#radio7:checked~.first {
    margin-left: -595%;
-}#radio8:checked ~ 
-.first{
+}
+
+#radio8:checked~.first {
    margin-left: -694%;
 }
 
 
-.navigation-auto{
+.navigation-auto {
    position: absolute;
    display: flex;
-   width: 250px; 
-   
+   width: 250px;
+
    justify-content: center;
-   bottom: 2px; 
+   bottom: 2px;
    right: 18%;
- 
+
 }
 
-.navigation-auto div{
+.navigation-auto div {
    border: 2px solid black;
-   padding: 4px; 
-   border-radius: 10px; 
-      margin-right: 5px; 
+   padding: 4px;
+   border-radius: 10px;
+   margin-right: 5px;
 
 
 }
 
-#radio1:checked ~ .navigation-auto .auto-btn1{
-   background: #42445A;;
+#radio1:checked~.navigation-auto .auto-btn1 {
+   background: #42445A;
+   ;
 }
-#radio2:checked~.navigation-auto .auto-btn2{
+
+#radio2:checked~.navigation-auto .auto-btn2 {
    background: #42445A;
 }
-#radio3:checked~.navigation-auto .auto-btn3{
-   background: #42445A;;
+
+#radio3:checked~.navigation-auto .auto-btn3 {
+   background: #42445A;
+   ;
 }
+
 #radio4:checked~.navigation-auto .auto-btn4 {
-   background: #42445A;;
+   background: #42445A;
+   ;
 }
-#radio5:checked~.navigation-auto .auto-btn5{
-   background: #42445A;;
-}#radio6:checked~.navigation-auto .auto-btn6 {
-   background: #42445A;;
-}#radio7:checked~.navigation-auto .auto-btn7 {
-   background: #42445A;;
-}#radio8:checked~.navigation-auto .auto-btn8 {
-   background: #42445A;;
+
+#radio5:checked~.navigation-auto .auto-btn5 {
+   background: #42445A;
+   ;
+}
+
+#radio6:checked~.navigation-auto .auto-btn6 {
+   background: #42445A;
+   ;
+}
+
+#radio7:checked~.navigation-auto .auto-btn7 {
+   background: #42445A;
+   ;
+}
+
+#radio8:checked~.navigation-auto .auto-btn8 {
+   background: #42445A;
+   ;
 }
 
 
-#footer{
+#footer {
    display: flex;
    background-color: white;
    font-weight: bold;
-   height: 60px; 
-    
-    position: fixed;
-left: 0;
-right: 0;
-   bottom: 0;
-   
-   font-size: 14px; 
-   
-   
-   align-items: center;
-}
-footer a{
-    
-   color: #555662;
-   text-decoration: none; 
-   
-   
-   display: inline-block; 
+   height: 60px;
+
+   position: fixed;
    left: 0;
    right: 0;
-   
- padding-left: 9px;  
- padding-right: 9px; 
+   bottom: 0;
+
+   font-size: 14px;
+justify-content: space-between;
+
+   align-items: center;
 }
-#footicon{
+
+footer a {
+
+   color: #555662;
+   text-decoration: none;
+width: auto;
+
+   display: inline-block;
+   left: 0;
+   right: 0;
+margin: 0px 6px;
+
+}
+
+#footicon {
    display: flex;
    justify-content: center;
 }
-.footimg{
+
+.footimg {
    display: block;
    height: 25px;
    width: 28px;
    margin: -6px auto;
-   
-   
+
+
 }
-#MOREimg{
+
+#MOREimg {
    display: flex;
-   
-   height: 45px; 
+
+   height: 45px;
    width: 50px;
    margin-bottom: -5px;
 }
