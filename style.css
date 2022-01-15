@@ -255,7 +255,7 @@ hr {
 
 .slider {
    position: absolute;
-   
+   border: 2px solid red;
    top: 30%;
    left: 0;
    right: 0;
