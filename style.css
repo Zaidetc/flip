@@ -231,15 +231,15 @@ hr {
    text-decoration: none;
    margin: 30px 5px;
    padding: 10px;
-   font-size: 6px;
+   font-size: 9px;
    color: black;
    white-space: nowrap;
 }
 
 .scrollimg {
    display: flex;
-   height: 35px;
-   width: 37px;
+   height: 37px;
+   width: 40px;
 
    margin-top: -33px;
 }
