@@ -216,11 +216,11 @@ hr {
    overflow-x: auto;
    overflow-y: hidden;
    position: fixed;
-   top: 102px;
+   top: 6.5rem;
    height: 55px;
    margin: 3px -7px;
 
-
+border: 1px solid red;
    width: 100vw;
 }
 
