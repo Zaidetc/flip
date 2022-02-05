@@ -215,8 +215,8 @@ hr {
    display: flex;
    overflow-x: auto;
    overflow-y: hidden;
-   position: fixed;
-   top: 18vh;
+   position: relative;
+   top: 17vh;
    height: 55px;
    margin: 3px -7px;
 
@@ -227,7 +227,7 @@ hr {
 
 .scrollbar {
 
-   z-index: 2;
+   z-index: 1;
    text-decoration: none;
    margin: 30px 5px;
    padding: 10px;
@@ -408,7 +408,7 @@ hr {
    bottom: 0;
 
    font-size: 14px;
-justify-content: space-between;
+justify-content: center;
 
    align-items: center;
 }
@@ -446,4 +446,35 @@ margin: 0px 5px;
    height: 45px;
    width: 50px;
    margin-bottom: -5px;
+}
+.sale{
+   
+   position: relative;
+   display: flex;
+   top: 55vh;
+   height: 95px;
+   justify-content: space-evenly;
+   
+}
+.sale a{
+   color: black;
+   text-decoration-line: none;
+   font-weight: bolder;
+   
+}
+.saleimg{
+   height: 75px;
+   width: 90px;
+   
+   
+}
+.l1{
+   
+   background-color: #DBDCE7;
+   
+   margin: -3px;
+   display: flex;
+   justify-content: center;
+   border-bottom-left-radius: 5px;
+   border-bottom-right-radius:5px;
 }
