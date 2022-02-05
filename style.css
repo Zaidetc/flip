@@ -56,7 +56,9 @@
    height: 33px;
    width: 75vw;
    margin-top: 20px;
+resize: none;
 
+outline: none;
    background-color: white;
    border-color: white;
    border-top: white;
@@ -478,3 +480,4 @@ margin: 0px 5px;
    border-bottom-left-radius: 5px;
    border-bottom-right-radius:5px;
 }
+
